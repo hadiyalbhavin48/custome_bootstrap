@@ -1,0 +1,324 @@
+/* HTML5 display-role reset for older browsers */
+
+.menu {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  header.header {
+    display: block;
+  }
+  header.header a.brand {
+    margin: 1.5rem 1.5rem 0;
+    position: absolute;
+  }
+  header.header .menu.main {
+    padding-top: 5rem;
+  }
+  body.menu-opened header.header {
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.menu.main {
+  align-self: center;
+  line-height: 1.1;
+}
+body.nav-alt .menu.main {
+  font-size: 8vh;
+  text-align: center;
+  font-family: "hk-nova", serif;
+}
+body.nav-alt .menu.main .menu-link {
+  margin: 0;
+  padding: 1.2vh 0;
+  transition: all 0.3s;
+}
+
+body.nav-alt .menu.main .menu-item a {
+  opacity: 0;
+  transform: scale(0.6);
+  transition: all 0.3s;
+}
+
+body.nav-alt.menu-opened .menu.main .menu-item a {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.6s;
+}
+
+header.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  z-index: 5;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.wrapper header.header {
+  order: -1;
+  transition: transform 0.35s;
+}
+header.header,
+.burger {
+  transform: translate(0, 0);
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 5rem;
+}
+
+.wrapper:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s, visibility 1s;
+}
+
+/* 2. Configurations */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+ *
+ * v2.0 | 20110126
+ *
+ * License: none (public domain) */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+header {
+  display: block;
+}
+
+.wrapper.dropdown-hovered header.header {
+  background: transparent !important;
+  transition: none;
+  box-shadow: none;
+}
+
+.scrolled .wrapper.dropdown-hovered .header {
+  box-shadow: none;
+}
+
+header.header a.brand {
+  border: 0;
+  margin: 0 1.25rem 0;
+  position: relative;
+  display: block;
+  z-index: 6;
+}
+
+header.header a.brand img {
+  max-height: 2rem;
+  vertical-align: middle;
+}
+
+header.header a.brand img.white {
+  display: none;
+}
+
+header.header a {
+  color: #1d1e20;
+  transition: color 0.3s;
+}
+
+header.header a:after {
+  transition: border-color 0.3s;
+}
+
+header.header > * {
+  flex: 1;
+}
+
+header.header > *:last-child {
+  justify-self: right;
+  justify-content: flex-end;
+  margin-right: 0rem;
+}
+
+.header-inverted:not(.scrolled) .wrapper.dropdown-hovered {
+  background: #1d1e20;
+}
+
+.header-inverted:not(.scrolled) header.header {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.header-inverted:not(.scrolled) header.header *,
+.header-inverted:not(.scrolled) header.header *:after {
+  color: white !important;
+  border-color: white !important;
+}
+
+.header-inverted:not(.scrolled) header.header a.brand img.default {
+  display: none;
+}
+
+.header-inverted:not(.scrolled) header.header a.brand img.white {
+  display: block;
+}
+
+.header-inverted:not(.scrolled) .burger hr {
+  border-color: white;
+}
+
+.header-inverted:not(.scrolled).menu-opened .menu {
+  background: #1d1e20;
+}
+
+header.header,
+.burger {
+  transform: translate(0, 0);
+}
+
+.scrolled header.header,
+.scrolled .burger {
+  position: fixed;
+  transform: translate(0, -5rem);
+}
+
+.scrolled.scrolled-up header.header {
+  background: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scrolled.scrolled-up header.header,
+.scrolled.scrolled-up .burger {
+  transform: translate(0, 0);
+}
+
+.scrolled.scrolled-up.dropdown-hovered header.header {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+body.nav-alt header.header {
+  transition: all 0.6s;
+}
+
+body.nav-alt.menu-opened header.header {
+  height: 100vh;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  background: white !important;
+}
+body.menu-opened header.header {
+  overflow-y: scroll;
+  height: 100vh;
+}

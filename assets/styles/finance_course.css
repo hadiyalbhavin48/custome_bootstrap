@@ -1,0 +1,145 @@
+.finance_banner_section {
+  padding: 100px 0 150px 0px;
+  background: #efeef2;
+}
+
+.freelance_list {
+  margin-left: 1.5em;
+  line-height: 1.5em;
+  list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4621/treehouse-marker.png);
+}
+
+.Course_title h2 {
+  margin-bottom: 65px !important;
+}
+
+.Course_title h2 {
+  margin-bottom: 65px !important;
+}
+
+.course_outline_wrp {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.Course_sub_title h3 {
+  margin-top: 0 !important;
+}
+
+.Course_sub_title p{
+    margin-bottom: 10px;
+}
+
+.Course_sub_title strong {
+    margin-bottom: 0 !important;
+    margin-top: 50px !important;
+}
+
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .finance_banner_section {
+    padding: 100px 0px 100px 0px;
+  }
+}
+
+@media (min-width: 981px) and (max-width: 1024px) {
+  .finance_banner_section {
+    padding: 100px 0px 100px 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+  .finance_banner_section {
+    padding: 80px 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .finance_banner_section {
+    padding: 50px 0px;
+  }
+  .Course_title h2 {
+    margin-bottom: 30px !important;
+  }
+}
+
+@media (max-width: 576px) {
+    .Course_title h2 {
+        margin-bottom: 10px !important;
+    }
+}
+
+
+/* faq */
+
+.faq_section {
+    padding: 80px 0px;
+}
+
+.faq-content {
+  margin: 0 auto;
+}
+
+.faq-question {
+  padding: 20px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.panel-title {
+  font-size: 24px;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 0 48px;
+  display: block;
+  cursor: pointer;
+}
+
+.panel-content {
+  font-size: 20px;
+  padding: 0px 14px;
+  margin: 0 40px;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.panel:checked ~ .panel-content {
+  height: auto;
+  opacity: 1;
+  padding: 14px;
+}
+
+.plus {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 4px;
+  z-index: 5;
+  font-size: 42px;
+  line-height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.panel:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.panel {
+  display: none;
+}

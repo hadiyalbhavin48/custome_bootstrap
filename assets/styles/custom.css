@@ -1,0 +1,463 @@
+/*
+
+    Nevo Custom Styles
+    ------------------
+    Please use this stylesheet to make any changes to styles,
+    so you can keep the changes when an update is available.
+
+*/
+* {
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "hk-grotesk", sans-serif;
+  font-weight: 600;
+}
+.text-center {
+  text-align: center;
+}
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0px 180px;
+}
+.page_title h2 {
+  font-size: 55px;
+  margin: 0px 0px 0px 0px;
+}
+.page_title h1 {
+  font-size: 55px;
+  margin: 0px 0px 0px 0px;
+  letter-spacing: -0.05rem;
+}
+.page_title p {
+  font-size: 28px;
+  margin: 20px 0px 0px 0px;
+}
+.page_title strong {
+  font-size: 20px;
+  color: #3d747d;
+  margin: 0px 0px 20px 0px;
+  display: inline-block;
+}
+header.header a {
+  font-family: "hk-grotesk", sans-serif;
+  font-size: 24px;
+}
+.row_custom {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.row_custom_shap {
+  margin: 0px;
+}
+.row_custom_reverse {
+  flex-direction: row-reverse;
+}
+
+.custom_4 {
+  width: 33.333%;
+}
+.custom_3 {
+  width: 25%;
+}
+.custom_6 {
+  width: 50%;
+}
+.custom_8 {
+  width: 66.666%;
+}
+.custom_12 {
+  width: 100%;
+}
+.custom_1,
+.custom_2,
+.custom_3,
+.custom_4,
+.custom_5,
+.custom_6,
+.custom_7,
+.custom_8,
+.custom_9,
+.custom_10,
+.custom_11,
+.custom_12 {
+  padding: 20px;
+}
+
+.btn_section {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn_section_center {
+  justify-content: center;
+}
+.btn_section a.btn_medium {
+  font-size: 24px;
+  color: #fff;
+  background: #000000;
+  padding: 15px 30px;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn_section a.btn_medium_border {
+  background: transparent !important;
+  border: 1px solid #000;
+  color: #000000 !important;
+  margin-left: 20px;
+}
+
+.custom_6_content {
+  width: 55%;
+}
+.custom_6_img {
+  width: 45%;
+}
+
+.image-shap-left {
+  position: relative;
+}
+
+.image-shap-left:after {
+  content: "";
+  background: url(../images/shap/shap/image-shap-left.png);
+  background-size: cover;
+  width: 800px;
+  height: 783px;
+  display: inline-block;
+  position: absolute;
+  left: -230px;
+  top: -100px;
+  z-index: -1;
+}
+
+.image-shap-right2 {
+  position: relative;
+}
+
+.image-shap-right2:after {
+  content: "";
+  background: url(../images/shap/shap/image-shap-right.png);
+  background-size: cover;
+  width: 800px;
+  height: 783px;
+  display: inline-block;
+  position: absolute;
+  right: -230px;
+  top: -100px;
+  z-index: -1;
+}
+
+.image-shap-right {
+  position: relative;
+}
+.image-box {
+  width: 470px;
+  height: 570px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-left: 0px;
+}
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-shap-right .image-box {
+  margin: 0 0px 0 auto;
+}
+.image-shap-right:after {
+  content: "";
+  background: url(../images/shap/shap/image-shap-right.png);
+  background-size: cover;
+  width: 800px;
+  height: 783px;
+  display: inline-block;
+  position: absolute;
+  right: -230px;
+  top: -100px;
+  z-index: -1;
+}
+
+.read_my_blog_section {
+  padding: 80px 0px;
+}
+.read_my_blogs {
+  margin-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.read_my_blogs_box {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.15);
+  height: 100%;
+}
+.read_my_blogs_img {
+  width: 100%;
+  height: 350px;
+}
+.read_my_blogs_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.read_my_blogs_content {
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.read_my_blogs_content h3 {
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+}
+.listen_section {
+  background: #f7f9fa;
+  padding: 80px 0px;
+}
+.listen_section .listens {
+  align-items: center;
+}
+.listen_img_spacing {
+  padding-left: 50px;
+}
+.listen_img {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  display: inline-flex;
+}
+.listen_img img {
+  width: 100%;
+  height: 100%;
+  object: cover;
+}
+
+.freelance_courses {
+  padding: 150px 0px;
+}
+
+.explore_my_work_section {
+  padding: 150px 0px;
+  background: #efeef2;
+}
+.how_help_you_section {
+  background: #efeef2;
+  padding: 100px 0px 80px 0px;
+}
+.services_offer_section {
+  margin-top: 50px;
+}
+.services_offer_box {
+  background: #fff;
+  border-radius: 15px;
+  padding: 50px 30px 45px 30px;
+  height: 100%;
+  box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.15);
+}
+.services_offer_icon {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #000000;
+  margin: 0 auto;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services_offer_icon img {
+  width: 80px;
+}
+.services_offer_dis {
+  margin-top: 20px;
+}
+.services_offer_dis h3 {
+  margin-top: 40px;
+  font-size: 32px;
+}
+.how_help_you_section .row_custom {
+  justify-content: center;
+  margin-top: 30px;
+}
+.work_together_section {
+  padding: 140px 0px 150px 0px;
+}
+.work_together_content {
+  position: relative;
+  margin-top: 50px;
+}
+.work_together_img img {
+  height: 1400px;
+}
+
+.together_content h3 {
+  color: #000000;
+  font-size: 36px;
+  margin: 0px 0px 15px 0px;
+}
+.together_content p {
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0px;
+}
+
+.content_01 {
+  position: absolute;
+  top: 0px;
+  left: 170px;
+  max-width: calc(70% - 170px);
+}
+
+.content_02 {
+  position: absolute;
+  top: 230px;
+  left: 575px;
+  max-width: calc(70% - 170px);
+}
+.content_03 {
+  position: absolute;
+  top: 490px;
+  left: 745px;
+  max-width: calc(70% - 170px);
+}
+
+.content_04 {
+  position: absolute;
+  top: 760px;
+  left: 740px;
+  max-width: calc(70% - 170px);
+}
+
+.content_05 {
+  position: absolute;
+  top: 1010px;
+  left: 585px;
+  max-width: calc(70% - 170px);
+}
+.content_06 {
+  position: absolute;
+  top: 1260px;
+  left: 162px;
+  max-width: calc(70% - 170px);
+}
+.banner_section {
+  background-color: #ebeaef;
+  padding: 100px 0px 150px 0px;
+  background-image: url(../images/backgrounds/elisabeth-mayr-freelance-ux-designer.jpg);
+  background-position: right;
+  background-size: 950px;
+  background-repeat: no-repeat;
+}
+
+.header_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper header.header {
+  background: #ffffff;
+}
+
+.footer {
+  width: 100%;
+  padding: 50px;
+}
+.footer p {
+  font-family: "hk-grotesk", sans-serif;
+  font-size: 24px;
+}
+
+.simple-a {
+  margin-top: 20px;
+}
+
+.padding-0 {
+  padding: 0;
+}
+.faq-header {
+  font-size: 42px;
+  border-bottom: 1px dotted #ccc;
+  padding: 24px;
+}
+
+.faq-content {
+  margin: 0 auto;
+}
+
+.faq-question {
+  padding: 20px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.panel-title {
+  font-size: 24px;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 0 48px;
+  display: block;
+  cursor: pointer;
+}
+
+.panel-content {
+  font-size: 20px;
+  padding: 0px 14px;
+  margin: 0 40px;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.panel:checked ~ .panel-content {
+  height: auto;
+  opacity: 1;
+  padding: 14px;
+}
+
+.plus {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 4px;
+  z-index: 5;
+  font-size: 42px;
+  line-height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.panel:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.panel {
+  display: none;
+}

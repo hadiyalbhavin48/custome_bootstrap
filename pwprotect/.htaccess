@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "Access to /pwprotect"
+AuthUserFile /kunden/homepages/19/d781801732/htpasswd
+Require user visitor
+Require user portfolio-tourist

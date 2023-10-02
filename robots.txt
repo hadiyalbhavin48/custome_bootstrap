@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://www.elisabethmayr.co.uk/sitemap.xml

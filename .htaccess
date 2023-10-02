@@ -1,0 +1,9 @@
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.elisabethmayr\.co\.uk$
+RewriteRule ^/?$ "http\:\/\/elisabethmayr\.co\.uk\/" [R=301,L]
+RewriteBase /
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R,L]
+

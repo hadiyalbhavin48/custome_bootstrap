@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Access to /venquis"
+AuthUserFile /kunden/homepages/19/d781801732/htpasswd
+Require user venquis
